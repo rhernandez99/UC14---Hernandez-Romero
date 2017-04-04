@@ -76,4 +76,51 @@ changeSign: function() {
    this.currentInput = this.currentInput*(-1);
    this.displayCurrentInput();
 },
+// Change the sign of the current input
+changeSign: function() {
+   this.currentInput = this.currentInput*(-1);
+   this.displayCurrentInput();
+},
+
+// Clear the current input back to 0
+clears: function() {
+    this.currentInput = "0";
+    this.displayCurrentInput();
+},
+
+// Change the current input to a percentage
+percentage: function() {
+    this.currentInput = this.currentInput/(100);
+    this.displayCurrentInput();
+},
+
+// Calculate the factorial of the current input
+factorial: function() {
+    var input = this.currentInput;
+    var x = input;
+    for (i = input-1; i > 1; i--) {
+        x = x*i;
+    }
+    this.currentInput = x;
+    this.displayCurrentInput();
+},
+
+// Calculate the square of the current input
+square: function() {
+    this.currentInput = this.currentInput*(this.currentInput);
+    this.displayCurrentInput();
+},
+
+// Calculate the square root of the current input
+squareRoot: function() {
+    x = this.currentInput;
+    this.currentInput = Math.sqrt(x);
+    this.displayCurrentInput();
+},
+
+// Calculate the inverse of the current input
+inverse: function() {
+this.currentInput = 1/this.currentInput;
+    this.displayCurrentInput();
+},
 }
