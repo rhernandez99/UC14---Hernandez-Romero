@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calcuator Starter App</title>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="calculator_object.js"></script>
+</head>
+<center>
+<body>
+    <h1>Calculator App</h1>
+    <form>
+        <p>
+            <input type="text" id="screen"> </p>
+        <p>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calculator.allClear()">AC</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calculator.clears()">C</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calculator.changeSign()">+/-</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calculator.percentage()">%</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('7')">7</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('8')">8</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('9')">9</button>
+            <button type="button" class="btn btn-success btn-lg" onclick="calculator.storeOperator('*')">x</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calculator.inverse()">1/x</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('4')">4</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('5')">5</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('6')">6</button>
+            <button type="button" class="btn btn-success btn-lg" onclick="calculator.storeOperator('-')">-</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calculator.square()">x<sup>2</sup></button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('1')">1</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('2')">2</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('3')">3</button>
+            <button type="button" class="btn btn-success btn-lg" onclick="calculator.storeOperator('+')">+</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calculator.factorial()">x!</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDigit('0')">0</button>
+            <button type="button" class="btn btn-info btn-lg" onclick="calculator.addDecimal()">.</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="calculator.calculate()">=</button>
+            <button type="button" class="btn btn-success btn-lg" onclick="calculator.storeOperator('/')">/</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="calculator.squareRoot()">&#8730;x</button>
+        </p>
+    </form>
+</body>
+</center>
+</html>
